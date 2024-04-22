@@ -1,0 +1,191 @@
+html{
+    font-size: 62.5%;
+    font-family: "Noto Sans JP", sans-serif;
+   
+}
+
+
+
+
+h1{
+
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 6px;
+    
+}
+
+h3{
+    
+}
+
+h4{
+    
+}
+
+h5{
+    
+}
+
+h6{
+    
+}
+
+p{
+    font-size: 1.6rem;
+    
+}
+
+a{
+    font-size: 1.6rem;
+}
+
+li{
+
+    font-size: 1.6rem;
+}
+.wrapper{
+    
+}
+
+
+/* -------------------------
+
+header
+
+------------------------- */
+
+header{
+    position: relative;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 48px;
+}
+
+header h1{
+    letter-spacing: 6px;
+    font-size: 2.4rem;
+    font-weight: 900;
+
+}
+
+header .main_menu {
+    width: 60%;
+    padding-left: 30px;
+
+}
+
+header .main_menu li{
+padding-right:10px ;
+padding-left: 10px;
+}
+
+header .main_menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header ,.main_menu a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+header .conversion_menu{
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+header .conversion_menu li{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+header .conversion_menu ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+header .conversion_menu a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 760px) {cyuu
+
+}
+@media screen and (max-width: 480px) {
+
+}
+
+
+
+
+/* -------------------------
+
+about
+
+------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 760px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+/* -------------------------
+
+service
+
+------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 760px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+/* -------------------------
+
+others
+
+------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+  }
+@media screen and (max-width: 760px) {
+
+  }
+@media screen and (max-width: 480px) {
+
+  }

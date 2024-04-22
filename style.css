@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item{
+    width: 300px;
+    height: 300px;
+}
+
+.item01{
+    background-color: brown;
+}
+.item02{
+    background-color: rgb(20, 46, 193);
+}
+.item03{
+    background-color: rgb(62, 183, 18);
+}

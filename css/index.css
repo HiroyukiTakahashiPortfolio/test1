@@ -1,0 +1,183 @@
+/* -------------------------
+
+目次
+    基本設定
+    hero
+    blog
+    about
+    service
+    others
+
+メインカラー
+サブカラー
+
+
+
+------------------------- */
+
+/* -------------------------
+
+基本設計
+
+------------------------- */
+
+
+h1{
+
+}
+
+h2{
+    
+}
+
+h3{
+    
+}
+
+h4{
+    
+}
+
+h5{
+    
+}
+
+h6{
+    
+}
+
+p{
+    
+}
+
+.wrapper{
+    
+}
+
+
+/* -------------------------
+
+hero
+
+------------------------- */
+
+#hero img{
+  width: 100%;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 760px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+
+
+/* -------------------------
+
+blog
+
+------------------------- */
+
+#blog.wrapper{
+  padding-right: 48px;
+  padding-left: 48px;
+
+}
+
+#blog.title{
+  
+}
+
+#blog .title h2::after{
+  content:"ブログ";
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+#blog .title hr{
+  width: 100px;
+}
+
+#blog .content{
+  display: flex;
+  justify-content: space-around;
+  
+}
+#blog .content h3{
+  background-color: black;
+  color: white;
+  font-display: inline-block;
+  padding:10px 40px;
+  font-size: 1.6rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 760px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+
+
+
+
+/* -------------------------
+
+about
+
+------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 760px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+/* -------------------------
+
+service
+
+------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 760px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+/* -------------------------
+
+others
+
+------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+  }
+@media screen and (max-width: 760px) {
+
+  }
+@media screen and (max-width: 480px) {
+
+  }
+
