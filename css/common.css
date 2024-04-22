@@ -18,6 +18,15 @@ h2{
     
 }
 
+h2::after{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  
+}
+
+
 h3{
     
 }
@@ -36,6 +45,7 @@ h6{
 
 p{
     font-size: 1.6rem;
+    line-height: 1.8;
     
 }
 
@@ -48,7 +58,8 @@ li{
     font-size: 1.6rem;
 }
 .wrapper{
-    
+    /* padding-right: 48px;
+    padding-left: 48px; */
 }
 
 
