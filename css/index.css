@@ -159,6 +159,7 @@ about
   padding-right: 48px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
 }
 
@@ -169,6 +170,7 @@ about
 }
 #about .item:nth-child(2){
   width: 40%;
+  padding: 40px;
 }
 #about .item img{
   width: 100%;
@@ -178,7 +180,7 @@ about
   content:"アバウト";  
 }
 
-#about .title hr{
+#about hr{
   width: 100px;
   margin-bottom: 20px;
 }
@@ -197,6 +199,62 @@ about
 service
 
 ------------------------- */
+#service{
+  padding: 50px 0px;
+  
+}
+#service .wrapper{
+  padding-left: 48px;
+  padding-right: 48px;
+
+}
+#service .title{
+
+}
+
+#service h2::after{
+  content:"サービス";
+}
+
+#service hr{
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+#service .content{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+#service .content .item:nth-child(1){
+  padding-top: 100px;
+}
+
+
+#service .content .item{
+  width: 500px;
+  padding: 30px;
+}
+#service .content .item img{
+  width: 100%;
+}
+
+#service .item_child{
+  padding: 30px 0px;
+
+}
+
+#service .item h3{
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+#service .item h3::before{
+  content:"-";
+  margin-right: 10px;
+
+}
+
 
 @media screen and (max-width: 1024px) {
 
@@ -212,6 +270,60 @@ service
 others
 
 ------------------------- */
+
+#others{
+  position: relative;
+}
+
+#others .wrapper{
+  padding: 30px 48px;
+
+}
+
+#others .content{
+  background-color: gray;
+  padding: 50px;
+  color: white;
+  width: 50%;
+
+}
+
+#others .content h2::after{
+  content:"その他";
+}
+
+#others .content hr{
+  width: 100px;
+  margin-bottom: 20px;
+
+}
+
+
+
+#others .content table th {
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+ 
+}
+#others .content table td {
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+ 
+}
+
+
+
+#others .bg_img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+#others .bg_img img{
+  width: 800px;
+}
 
 @media screen and (max-width: 1024px) {
 
