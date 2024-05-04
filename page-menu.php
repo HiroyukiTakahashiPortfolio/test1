@@ -1,46 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <header>
-        <div class="wrapper">
-            <h1>PandaLion</h1>
-            <div class="main_menu">
-                <ul>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="conversion_menu">
-                <ul>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-
-            </div>
-        </div>
-    </header>
-
+<?php get_header(); ?>
     <main>
         
             <section id="hero">
                 <div class="wrapper">
-                    <img src="img\retoro_cafe_hero.jpeg" alt="オフィス内装">
+                    <img src="<?php echo get_template_directory_uri(); ?>\img\retoro_cafe_hero.jpeg" alt="オフィス内装">
                 </div>
             </section>
 
@@ -53,25 +16,53 @@
                     </div>
 
                     <div class="content">
-                        <div class="item">
-                            <h3>メニュー</h3>
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                        <div class="item">
-                            <h3>メニュー</h3>
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
+
+                        
+                    <?php if ( have_posts() ) : ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+        <div class="item">
+            <?php if ( has_post_thumbnail() ): ?>
+                <figure>
+                    <?php the_post_thumbnail( 'post-thumbnails' ); ?>
+                </figure>
+            <?php else : ?>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/HAWKSHAW19206006_TP_V4.jpg" alt="ブログ写真">
+                </figure>
+            <?php endif; ?>
+            <p><?php the_date(); ?></p>
+            <h3><?php the_title(); ?></h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <a href="<?php the_permalink(); ?>">詳細はこちら</a>
+        </div>
+    <?php endwhile; ?>
+<?php else : ?>
+    <p>投稿がありません</p>
+<?php endif; ?>
+
+                                        <!-- <div class="item">
+                                                
+                                                        <figure>
+                                                            <img src="<?php echo get_template_directory_uri(); ?>\img\AdobeStock_211605085.jpeg" alt ="test">
+                                                        </figure>
+                                                    <p><?php the_date(); ?></p>
+                                                    <h3><?php the_title(); ?></h3>
+                                                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                                    <a href="<?php the_permalink(); ?>">詳細はこちら</a>
+                                        </div> -->
+
+
+
+
                     </div>
-                    
                 </div>
-                
             </section>
 
 
             <section id="about">
                 <div class="wrapper">
                     <div class="item">
-                        <img src="img\AdobeStock_211605085.jpeg" alt="会社概要の写真が入る。">
+                        <img src="<?php echo get_template_directory_uri(); ?>\img\AdobeStock_211605085.jpeg" alt="会社概要の写真が入る。">
                     </div>
                     <div class="item">
                         <div class="title">
@@ -98,14 +89,14 @@
                             <div class="item_1 item_child">
                                 <h3>サービスメニュー</h3>
                                 <div>
-                                    <img src="img\ogasuta458A7901_TP_V4.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>\img\ogasuta458A7901_TP_V4.jpg" alt="">
                                 </div>
                             </div>
                             
                             <div class="item_2 item_child">
                                 <h3>サービスメニュー</h3>
                                 <div>
-                                    <img src="img\ogasuta458A7901_TP_V4.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>\img\ogasuta458A7901_TP_V4.jpg" alt="">
                                 </div>
                             </div>
                             
@@ -115,14 +106,14 @@
                             <div class="item_3 item_child">
                                 <h3>サービスメニュー</h3>
                                 <div>
-                                    <img src="img\ogasuta458A7901_TP_V4.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>\img\ogasuta458A7901_TP_V4.jpg" alt="">
                                 </div>
                             </div>
                         
                             <div class="item_4 item_child">
                                 <h3>サービスメニュー</h3>
                                 <div>
-                                    <img src="img\ogasuta458A7901_TP_V4.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>\img\ogasuta458A7901_TP_V4.jpg" alt="">
                                 </div>
                             </div>
 
@@ -171,7 +162,7 @@
                             </div>
                     </div>
                         <div class="bg_img">
-                            <img src="img\ogasuta458A7901_TP_V4.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>\img\ogasuta458A7901_TP_V4.jpg" alt="">
                         </div>
                     
 
@@ -180,45 +171,6 @@
             </section>
         
     </main>
-    <footer>
-        <div class="wrapper">
-            <div class="logo">
-                <h2>PandaLion</h2>
-                <p>@pandalion.com</p>
-                
-            </div>
-            <div class="address">
-                <table>
-                    <tr>
-                        <th>THTH</th>
-                        <td>TDTDTDTD</td>
-                    </tr>
-                    <tr>
-                        <th>THTH</th>
-                        <td>TDTDTDTD</td>
-                    </tr>
-                    <tr>
-                        <th>THTH</th>
-                        <td>TDTDTDTD</td>
-                    </tr>
-                    <tr>
-                        <th>THTH</th>
-                        <td>TDTDTDTD</td>
-                    </tr>
-                    <tr>
-                        <th>THTH</th>
-                        <td>TDTDTDTD</td>
-                    </tr>
 
-                </table>
-
-            </div>
-
-            
-        </div>
-
-
-    </footer>
-    
-</body>
-</html>
+<?php get_footer(); ?>
+ 
